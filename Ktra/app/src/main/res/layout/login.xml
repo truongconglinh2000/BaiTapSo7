@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".loginActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        app:srcCompat="@drawable/plane" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+
+        android:drawableLeft="@drawable/ic_action"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#ffff"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/user"
+        android:layout_alignStart="@+id/user"
+        android:layout_alignLeft="@+id/user"
+        android:layout_marginTop="30dp"
+
+        android:drawableLeft="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="#ffff"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="TRƯƠNG CÔNG LỈNH"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/button"
+        android:text="Button"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/button4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:layout_weight="1"
+android:layout_marginRight="10dp"
+            android:background="@drawable/button2"
+            android:text="Logn" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_weight="1"
+            android:background="@drawable/button1"
+            android:text="Sign" />
+    </LinearLayout>
+
+
+</RelativeLayout>

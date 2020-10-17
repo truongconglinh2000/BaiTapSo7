@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/bk" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/im"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/roundbt"
+        android:src="@drawable/bk"
+        app:civ_border_color="#ffff"
+        app:civ_border_width="5dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Back Home"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/im"
+        android:layout_centerHorizontal="true"
+        android:text="TRƯƠNG CÔNG LỈNH"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+     android:layout_below="@id/listview"
+    android:background="@drawable/bk"
+    >
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/roundbt"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/roundbt"
+        android:text="Profile" />
+
+</com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
